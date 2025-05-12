@@ -119,7 +119,10 @@ namespace Audio2Opus
             ConvertButton.Enabled = true;
             BitrateNumericUpDown.Enabled = true;
             FileListView.Enabled = true;
-            ClearListButton.Enabled = true;
+            if (FileListView.Items.Count > 0)
+            {
+                ClearListButton.Enabled = true;
+            }
         }
     }
 }
